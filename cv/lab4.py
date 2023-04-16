@@ -26,10 +26,10 @@ kp_image1 = cv2.drawKeypoints(image1, kp1, None)
 kp_image2 = cv2.drawKeypoints(image2, kp2, None)
 
 cv2.imshow('kp_image1.png', kp_image1)
-cv2.imwrite('kp_image1.png', kp_image1)
+cv2.imwrite('./result/lab4/kp_image1.png', kp_image1)
 
 cv2.imshow('kp_image2.png', kp_image2)
-cv2.imwrite('kp_image2.png', kp_image2)
+cv2.imwrite('./result/lab4/kp_image2.png', kp_image2)
 
 #  查看关键点
 print("关键点数目:", len(kp1))
@@ -69,7 +69,7 @@ matches = cv2.drawMatchesKnn(image1, kp1, image2, kp2, good_matches, None, flags
 
 plt.figure()
 cv2.imshow('matches', matches)
-cv2.imwrite('matches.png', matches)
+cv2.imwrite('./result/lab4/matches.png', matches)
 # 等待窗口
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -101,7 +101,7 @@ if len(good_matches) > 4:
     cv2.imshow('image1.jpg', image1)
     cv2.imshow('image2.jpg', image2)
     cv2.imshow('imgOut.jpg', imgOut)
-    cv2.imwrite('imgOut.png', imgOut)
+    cv2.imwrite('./result/lab4/imgOut.png', imgOut)
     # 等待窗口
     cv2.waitKey(0)
     cv2.destroyAllWindows()
