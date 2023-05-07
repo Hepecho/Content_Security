@@ -1,0 +1,1 @@
+{"log_id": 16834670166540072, "tasks_info": [{"task_status": "Success", "task_result": {"result": ["北京科技馆。"], "audio_duration": 4050, "detailed_result": [{"res": ["北京科技馆。"], "end_time": 4050, "begin_time": 0, "words_info": [], "sn": "205281532551683466016", "corpus_no": "7230431483318935388"}], "corpus_no": "7230431483318935388"}, "task_id": "6457a71401f0ce00011924f8"}]}
